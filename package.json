@@ -1,0 +1,57 @@
+{
+  "name": "prj-cable-x-js",
+  "version": "0.1.0",
+  "description": "Javascript client for cable-x",
+  "private": true,
+  "module": "src/index.ts",
+  "scripts": {
+    "test": "karma start --code-coverage=true --watch=false",
+    "test-headless": "karma start --code-coverage=true --watch=false --no-progress --browsers=ChromeHeadless  && cat ./coverage/cable-x-js/lcov.info | coveralls",
+    "build:clean": "rimraf dist",
+    "build:types": "tsc --emitDeclarationOnly --declaration true",
+    "prebuild": "yarn build:clean && yarn build:types",
+    "build": "webpack",
+    "lint": "tslint --project ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Code-Vedas/cable-x-js.git"
+  },
+  "author": "nitesh.purohit.it@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Code-Vedas/cable-x-js/issues"
+  },
+  "homepage": "https://github.com/Code-Vedas/cable-x-js#readme",
+  "devDependencies": {
+    "@types/node": "^13.13.4",
+    "@types/uuid": "^7.0.3",
+    "actioncable": "^5.2.4-2",
+    "awesome-typescript-loader": "^5.2.1",
+    "copy-webpack-plugin": "^5.1.1",
+    "coveralls": "^3.1.0",
+    "karma-coverage-istanbul-instrumenter": "^1.0.2",
+    "karma-coverage-istanbul-reporter": "^3.0.0",
+    "karma-jasmine-html-reporter": "^1.5.3",
+    "rimraf": "^3.0.2",
+    "rxjs": "~6.5.5",
+    "terser-webpack-plugin": "^2.3.6",
+    "ts-loader": "^7.0.1",
+    "tslint": "^6.1.1",
+    "tslint-config-airbnb": "^5.11.2",
+    "typescript": "^3.8.3",
+    "uuid": "^8.0.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "@types/jasmine": "~3.5.10",
+    "jasmine": "~3.5.0",
+    "karma": "~5.0.4",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-cli": "~2.0.0",
+    "karma-jasmine": "~3.1.1",
+    "karma-typescript": "~5.0.2",
+    "mock-socket": "^9.0.3"
+  }
+}
