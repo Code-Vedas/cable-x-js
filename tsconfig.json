@@ -11,5 +11,5 @@
     "sourceMap": true,
     "types": ["node", "jasmine"]
   },
-  "exclude": ["specs", "node_modules"]
+  "exclude": ["specs", "mocks", "node_modules"]
 }

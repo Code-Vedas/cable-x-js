@@ -5,7 +5,7 @@ import { CableXResponse } from '../interfaces/cablex.response.interface';
 const ActionCable = require('actioncable');
 import { v5 as uuidv5 } from 'uuid';
 import { v4 as uuidv4 } from 'uuid';
-import { HttpMethod } from '../enums/http.method.enum';
+import { CableXHttpMethod } from '../enums/cablex.http.method.enum';
 import { CableXRequest } from '../interfaces/cablex.request.interface';
 import { CableXRequestData } from '../interfaces/cablex.request.data.interface';
 
@@ -19,7 +19,7 @@ export class CableXRequestService {
   }[] = [];
 
   request(
-    method: HttpMethod,
+    method: CableXHttpMethod,
     path: string,
     options: CableXRequestOptions
   ): Observable<CableXResponse> {

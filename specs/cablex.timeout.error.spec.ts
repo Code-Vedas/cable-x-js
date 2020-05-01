@@ -1,6 +1,5 @@
 import { catchError } from 'rxjs/operators';
 import { cablexConfigure, cablex, stopCableX } from '../src/cable-x';
-import { HttpMethod } from '../src/enums/http.method.enum';
 import { WebSocket as MockWebSocket } from 'mock-socket';
 import { getMockServer } from '../mocks/cable-x.spec.mocks';
 const ActionCable = require('actioncable');
@@ -27,7 +26,7 @@ describe('CableX', () => {
     expect(window.cableXConfig.cablePath).toBe('');
   });
   it('Can call GET Method, catching timeout error', (done) => {
-    cablex(HttpMethod.GET, '/timeout', {})
+    cablex('get', '/timeout', {})
       .pipe(
         catchError((error) => {
           return of({ message: error.message });

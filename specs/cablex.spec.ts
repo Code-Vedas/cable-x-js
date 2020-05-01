@@ -1,5 +1,4 @@
 import { cablexConfigure, cablex, stopCableX } from '../src/cable-x';
-import { HttpMethod } from '../src/enums/http.method.enum';
 import { WebSocket as MockWebSocket } from 'mock-socket';
 import { getMockServer } from '../mocks/cable-x.spec.mocks';
 const ActionCable = require('actioncable');
@@ -24,15 +23,15 @@ describe('CableX', () => {
     expect(window.cableXConfig.cablePath).toBe('');
   });
   it('Can call GET Method', (done) => {
-    cablex(HttpMethod.GET, '/', {}).subscribe((result: any) => {
+    cablex('get', '/', {}).subscribe((result: any) => {
       expect(result.body.version).not.toBe('');
       done();
     });
   });
   it('Can call GET Method, while keeping connection alive', (done) => {
-    cablex(HttpMethod.GET, '/', {}).subscribe((result: any) => {
+    cablex('get', '/', {}).subscribe((result: any) => {
       expect(result.body.version).not.toBe('');
-      cablex(HttpMethod.GET, '/', {}).subscribe((resultInner: any) => {
+      cablex('get', '/', {}).subscribe((resultInner: any) => {
         expect(resultInner.body.version).not.toBe('');
         done();
       });

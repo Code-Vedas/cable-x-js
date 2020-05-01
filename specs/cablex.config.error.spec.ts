@@ -1,5 +1,4 @@
 import { cablex, stopCableX } from '../src/cable-x';
-import { HttpMethod } from '../src/enums/http.method.enum';
 import { catchError } from 'rxjs/operators';
 import { of } from 'rxjs';
 describe('CableXErrors', () => {
@@ -10,7 +9,7 @@ describe('CableXErrors', () => {
     stopCableX();
   });
   it('Will throw error if used before configuration', (done) => {
-    cablex(HttpMethod.GET, '/', {})
+    cablex('get', '/', {})
       .pipe(
         catchError((error) => {
           return of({ message: error.message });
