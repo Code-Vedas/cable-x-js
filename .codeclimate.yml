@@ -1,0 +1,21 @@
+
+engines:
+  duplication:
+    enabled: true
+    config:
+      languages:
+        javascript:
+          mass_threshold: 80
+  eslint:
+    enabled: true
+  fixme:
+    enabled: true
+ratings:
+  paths:
+  - "**.ts"
+exclude_paths:
+- projects/demo
+- "**conf.js"
+ratings:
+   paths:
+   - "src/**/*.ts"
