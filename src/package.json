@@ -1,0 +1,18 @@
+{
+  "name": "cable-x-js",
+  "version": "0.1.1",
+  "description": "Javascript client for cable-x",
+  "peerDependencies": {
+    "rxjs": "~6.5.5",
+    "actioncable": "~5.2.4-2"
+  },
+  "author": "nitesh.purohit.it@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Code-Vedas/cable-x-js/issues"
+  },
+  "homepage": "https://github.com/Code-Vedas/cable-x-js#readme",
+  "jsdelivr": "./cable-x-js.min.js",
+  "unpkg": "./cable-x-js.min.js",
+  "typings": "./index.d.ts"
+}
