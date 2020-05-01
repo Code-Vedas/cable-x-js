@@ -1,7 +1,8 @@
 {
   "name": "cable-x-js",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "Javascript client for cable-x",
+  "main": "src",
   "peerDependencies": {
     "rxjs": "~6.5.5",
     "actioncable": "~5.2.4-2"
