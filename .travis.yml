@@ -23,4 +23,4 @@ jobs:
 stages:
   - test
   - name: release
-    if: branch = release
+    if: branch = master
