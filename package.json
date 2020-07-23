@@ -12,7 +12,7 @@
     "prebuild": "yarn build:clean && yarn build:types",
     "build": "webpack",
     "lint": "tslint --project .",
-    "postpublish": "cp -r dist/package.json src/package.json && cp -r dist/yarn.lock .",
+    "postpublish": "cp -r dist/CHANGELOG.md . && cp -r dist/package.json src/package.json && cp -r dist/yarn.lock .",
     "semantic-release": "semantic-release"
   },
   "repository": {
@@ -26,6 +26,9 @@
   },
   "homepage": "https://github.com/Code-Vedas/cable-x-js#readme",
   "devDependencies": {
+    "@commitlint/cli": "^9.1.1",
+    "@commitlint/config-angular": "^9.1.1",
+    "@commitlint/config-conventional": "^9.1.1",
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/git": "^9.0.0",
     "@semantic-release/github": "^7.0.7",
@@ -35,6 +38,7 @@
     "awesome-typescript-loader": "^5.2.1",
     "copy-webpack-plugin": "^5.1.1",
     "coveralls": "^3.1.0",
+    "husky": "^4.2.5",
     "karma-coverage-istanbul-instrumenter": "^1.0.2",
     "karma-coverage-istanbul-reporter": "^3.0.0",
     "karma-jasmine-html-reporter": "^1.5.3",
@@ -60,19 +64,34 @@
     "karma-typescript": "~5.0.2",
     "mock-socket": "^9.0.3"
   },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
   "release": {
     "branch": "master",
     "plugins": [
       "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
       "@semantic-release/changelog",
-      "@semantic-release/github",
       [
         "@semantic-release/npm",
         {
           "pkgRoot": "dist"
         }
       ],
-      "@semantic-release/release-notes-generator"
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "package.json",
+            "CHANGELOG.md"
+          ],
+          "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        }
+      ],
+      "@semantic-release/github"
     ]
   }
 }
