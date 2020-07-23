@@ -114,6 +114,10 @@
       },
       {
         "path": "@semantic-release/exec",
+        "cmd": "echo '//registry.npmjs.org/:_authToken='$NPM_TOKEN>.npmrc"
+      },
+      {
+        "path": "@semantic-release/exec",
         "cmd": "cd dist && npm publish && cd .."
       },
       {
