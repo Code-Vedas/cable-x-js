@@ -118,7 +118,7 @@
       },
       {
         "path": "@semantic-release/exec",
-        "cmd": "cd dist && npm publish && cd .."
+        "cmd": "npm publish dist"
       },
       {
         "path": "@semantic-release/git",
