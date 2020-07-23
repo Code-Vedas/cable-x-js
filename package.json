@@ -11,7 +11,8 @@
     "build:types": "tsc --emitDeclarationOnly --declaration true",
     "prebuild": "yarn build:clean && yarn build:types",
     "build": "webpack",
-    "lint": "tslint --project ."
+    "lint": "tslint --project .",
+    "postpublish": "cp -r dist/package.json . && cp -r dist/yarn.lock ."
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,8 @@
   },
   "homepage": "https://github.com/Code-Vedas/cable-x-js#readme",
   "devDependencies": {
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
     "@types/node": "^13.13.4",
     "@types/uuid": "^7.0.3",
     "actioncable": "^5.2.4-2",
@@ -35,6 +38,7 @@
     "karma-jasmine-html-reporter": "^1.5.3",
     "rimraf": "^3.0.2",
     "rxjs": "~6.5.5",
+    "semantic-release": "^17.1.1",
     "terser-webpack-plugin": "^2.3.6",
     "ts-loader": "^7.0.1",
     "tslint": "^6.1.1",

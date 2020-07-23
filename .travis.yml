@@ -1,6 +1,7 @@
 language: node_js
 node_js:
   - "13"
+  - "14"
 dist: trusty
 sudo: required
 branches:
@@ -9,6 +10,17 @@ branches:
 before_script:
   - npm install -g yarn
 script:
+  - echo "Running tests against $(node -v)"
   - yarn lint
   - yarn test-headless
   - yarn build
+
+jobs:
+  include:
+    - stage: release
+      node_js: "14"
+      script: ./deploy.sh
+stages:
+  - test
+  - name: release
+    if: branch = release
