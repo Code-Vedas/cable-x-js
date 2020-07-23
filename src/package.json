@@ -1,6 +1,6 @@
 {
   "name": "cable-x-js",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "Javascript client for cable-x",
   "main": "cable-x-js.js",
   "peerDependencies": {
