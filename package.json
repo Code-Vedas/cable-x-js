@@ -11,7 +11,8 @@
     "build:types": "tsc --emitDeclarationOnly --declaration true",
     "prebuild": "yarn build:clean && yarn build:types",
     "build": "webpack",
-    "lint": "tslint --project ."
+    "lint": "tslint --project .",
+    "postpublish": "cp -r dist/package.json . && cp -r dist/yarn.lock ."
   },
   "repository": {
     "type": "git",
@@ -35,6 +36,7 @@
     "karma-jasmine-html-reporter": "^1.5.3",
     "rimraf": "^3.0.2",
     "rxjs": "~6.5.5",
+    "semantic-release": "^17.1.1",
     "terser-webpack-plugin": "^2.3.6",
     "ts-loader": "^7.0.1",
     "tslint": "^6.1.1",
