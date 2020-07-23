@@ -66,5 +66,11 @@ module.exports = {
         toType: "file",
       },
     ]),
+    new CopyPlugin([
+      {
+        from: "CHANGELOG.md",
+        to: "CHANGELOG.md",
+      },
+    ]),
   ],
 };
