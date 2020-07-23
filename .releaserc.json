@@ -11,11 +11,6 @@
         "pkgRoot": "dist"
       }
     ],
-    [
-      "@semantic-release/git",
-      {
-        "assets": ["package.json", "yarn.lock"]
-      }
-    ]
+    ["@semantic-release/git"]
   ]
 }

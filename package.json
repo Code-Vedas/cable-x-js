@@ -12,7 +12,7 @@
     "prebuild": "yarn build:clean && yarn build:types",
     "build": "webpack",
     "lint": "tslint --project .",
-    "postpublish": "cp -r dist/package.json . && cp -r dist/yarn.lock ."
+    "postpublish": "cp -r dist/package.json src/package.json && cp -r dist/yarn.lock ."
   },
   "repository": {
     "type": "git",
