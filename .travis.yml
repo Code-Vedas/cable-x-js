@@ -20,6 +20,4 @@ jobs:
     - stage: Semantic Release
       node_js: "14"
       script: ./deploy.sh
-      on:
-        - release
-        - feat/semantic-release
+      on: release
