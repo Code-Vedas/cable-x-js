@@ -12,7 +12,7 @@
     "prebuild": "yarn build:clean && yarn build:types",
     "build": "webpack",
     "lint": "tslint --project .",
-    "copyfiles": "cp -r dist/CHANGELOG.md . && cp -r dist/package.json src/package.json && cp -r dist/yarn.lock .",
+    "copyfiles": "cp -r dist/CHANGELOG.md . && cp -r dist/package.json src/package.json",
     "semantic-release": "semantic-release"
   },
   "repository": {
@@ -72,6 +72,7 @@
   },
   "release": {
     "branch": "master",
+    "ci": false,
     "verifyConditions": [
       "@semantic-release/changelog",
       "@semantic-release/git",
@@ -122,7 +123,7 @@
           "src/package.json",
           "yarn.lock"
         ],
-        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        "message": "build(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       }
     ],
     "publish": [
