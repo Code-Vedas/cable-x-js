@@ -1,6 +1,6 @@
 {
   "name": "cable-x-js",
-  "version": "0.1.6",
+  "version": "0.0.0-development",
   "description": "Javascript client for cable-x",
   "main": "cable-x-js.js",
   "peerDependencies": {
@@ -11,6 +11,10 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Code-Vedas/cable-x-js/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Code-Vedas/cable-x-js.git"
   },
   "homepage": "https://github.com/Code-Vedas/cable-x-js#readme",
   "jsdelivr": "./cable-x-js.min.js",

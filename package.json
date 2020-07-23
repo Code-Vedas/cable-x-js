@@ -1,6 +1,6 @@
 {
   "name": "prj-cable-x-js",
-  "version": "0.1.0",
+  "version": "0.0.0-development",
   "description": "Javascript client for cable-x",
   "private": true,
   "module": "src/index.ts",
@@ -12,11 +12,12 @@
     "prebuild": "yarn build:clean && yarn build:types",
     "build": "webpack",
     "lint": "tslint --project .",
-    "postpublish": "cp -r dist/package.json src/package.json && cp -r dist/yarn.lock ."
+    "postpublish": "cp -r dist/package.json src/package.json && cp -r dist/yarn.lock .",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Code-Vedas/cable-x-js.git"
+    "url": "https://github.com/Code-Vedas/cable-x-js.git"
   },
   "author": "nitesh.purohit.it@gmail.com",
   "license": "MIT",
