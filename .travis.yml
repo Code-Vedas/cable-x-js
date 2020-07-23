@@ -1,7 +1,7 @@
 language: node_js
 node_js:
   - "13"
-  - '14'
+  - "14"
 dist: trusty
 sudo: required
 branches:
@@ -15,8 +15,8 @@ script:
   - yarn test-headless
   - yarn build
 
-  jobs:
-    include:
-      - stage: npm release
-        node_js: "14"
-        script: ./deploy.sh
+jobs:
+  include:
+    - stage: npm release
+      node_js: "14"
+      script: ./deploy.sh
