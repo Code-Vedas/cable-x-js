@@ -27,7 +27,7 @@
   "homepage": "https://github.com/Code-Vedas/cable-x-js#readme",
   "devDependencies": {
     "@commitlint/cli": "^9.1.1",
-    "@commitlint/config-angular": "^9.1.1",
+    "@commitlint/config-angular": "^9.1.2",
     "@commitlint/config-conventional": "^9.1.1",
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/exec": "^5.0.0",
