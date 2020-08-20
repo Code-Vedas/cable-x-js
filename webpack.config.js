@@ -47,30 +47,38 @@ module.exports = {
     ],
   },
   plugins: [
-    new CopyPlugin([
-      {
-        from: "src/package.json",
-        to: "package.json",
-      },
-    ]),
-    new CopyPlugin([
-      {
-        from: "README.md",
-        to: "README.md",
-      },
-    ]),
-    new CopyPlugin([
-      {
-        from: "LICENSE",
-        to: "LICENSE",
-        toType: "file",
-      },
-    ]),
-    new CopyPlugin([
-      {
-        from: "CHANGELOG.md",
-        to: "CHANGELOG.md",
-      },
-    ]),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: "src/package.json",
+          to: "package.json",
+        },
+      ]
+    }),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: "README.md",
+          to: "README.md",
+        },
+      ]
+    }),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: "LICENSE",
+          to: "LICENSE",
+          toType: "file",
+        },
+      ]
+    }),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: "CHANGELOG.md",
+          to: "CHANGELOG.md",
+        },
+      ]
+    }),
   ],
 };
