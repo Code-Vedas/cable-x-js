@@ -42,7 +42,7 @@
     "husky": "^4.2.5",
     "karma-coverage-istanbul-instrumenter": "^1.0.2",
     "karma-coverage-istanbul-reporter": "^3.0.3",
-    "karma-jasmine-html-reporter": "^1.5.3",
+    "karma-jasmine-html-reporter": "^1.5.4",
     "lint-staged": "^10.2.11",
     "rimraf": "^3.0.2",
     "rxjs": "~6.5.5",
