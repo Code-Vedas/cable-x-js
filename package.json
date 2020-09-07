@@ -42,7 +42,7 @@
     "karma-coverage-istanbul-instrumenter": "^1.0.3",
     "karma-coverage-istanbul-reporter": "^3.0.3",
     "karma-jasmine-html-reporter": "^1.5.4",
-    "lint-staged": "^10.2.13",
+    "lint-staged": "^10.3.0",
     "rimraf": "^3.0.2",
     "rxjs": "~6.6.3",
     "semantic-release": "^17.1.1",
