@@ -4373,10 +4373,10 @@ karma-typescript@~5.2.0:
     util "^0.12.1"
     vm-browserify "^1.1.2"
 
-karma@~6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/karma/-/karma-6.0.0.tgz#7333193406e23d2b8071025c89b5e8d8ec000d48"
-  integrity sha512-Tc9VlrmAlOUjsi+5tyNlo18TWiOps3wo4HJYqfZImyTrek2gUASmW6q+bEIE1U5w9f+sQ97P5PbbUCp3uVNqrQ==
+karma@~6.0.3:
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/karma/-/karma-6.0.3.tgz#a35b4371306e08e3f8e46b5753aff46eaf3eec2c"
+  integrity sha512-dmiLQdsNAvnbV1G6VvUK7Cl5xpwiMisZNT8MjBtOo49jKlnZSWLxQIemuLT8sGSzvx5IGgMfMQEtf/CALiUEVQ==
   dependencies:
     body-parser "^1.19.0"
     braces "^3.0.2"
