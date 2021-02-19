@@ -879,10 +879,10 @@ acorn@^8.0.1, acorn@^8.0.4:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.0.5.tgz#a3bfb872a74a6a7f661bc81b9849d9cac12601b7"
   integrity sha512-v+DieK/HJkJOpFBETDJioequtc3PfxsWMaxIdIwujtF7FEV/MAyDQLlm6/zPvr7Mix07mLh6ccVwIsloceodlg==
 
-actioncable@^5.2.4-4:
-  version "5.2.4-4"
-  resolved "https://registry.yarnpkg.com/actioncable/-/actioncable-5.2.4-4.tgz#0f74282a18e30443a510de867f704837ceab3332"
-  integrity sha512-qlsr7nTyGwP5mdGSRL3uJsXgbsZ/T/j3cE7QlmcjRKXDuHcm0X0P95/+Ah/cqtx5F3Q2gFYosppGD0uorF8voQ==
+actioncable@^5.2.4-5:
+  version "5.2.4-5"
+  resolved "https://registry.yarnpkg.com/actioncable/-/actioncable-5.2.4-5.tgz#0cac3c91b2f037b3d021c6c485a5ffdde0276d15"
+  integrity sha512-68zWWG+RwIFBQVFUnoCMKQaGWsHYH/aRvgAV3eFslA8Qlm4GJH2tK0XagEbu22ZrQS/etK1yv7aW5T1seoMOVA==
 
 agent-base@4, agent-base@^4.3.0:
   version "4.3.0"
