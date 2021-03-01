@@ -192,17 +192,17 @@
     resolve-global "1.0.0"
     yargs "^16.0.0"
 
-"@commitlint/config-angular-type-enum@^12.0.0":
-  version "12.0.0"
-  resolved "https://registry.yarnpkg.com/@commitlint/config-angular-type-enum/-/config-angular-type-enum-12.0.0.tgz#edfb8d5fbd361e3f19b19d833e326bccbd6bd5ee"
-  integrity sha512-fJWHE8Ey8Li+H4jnnREG/xw5spJSgAg+wKBZwtoGQBzxFZ/DO/g5oo/P07nvXR1q89Ow5+f3a7K2oOJyt0i0hQ==
+"@commitlint/config-angular-type-enum@^12.0.1":
+  version "12.0.1"
+  resolved "https://registry.yarnpkg.com/@commitlint/config-angular-type-enum/-/config-angular-type-enum-12.0.1.tgz#46ad2dd5258dbb0eb2f26accf8f5849339d68f7b"
+  integrity sha512-0qETLi7f7BineQruIBjyzHFfvDfh9FTEbMs+oTAfl+cDKTLJYI5W6eKGjI3MPg5+8sxUtzh6pJ+Dp3LFOpawTQ==
 
-"@commitlint/config-angular@^12.0.0":
-  version "12.0.0"
-  resolved "https://registry.yarnpkg.com/@commitlint/config-angular/-/config-angular-12.0.0.tgz#aedc0b46c0f97a8225d52372e5581af697621ffc"
-  integrity sha512-V3PngSVvDV7bHdETptwuY5J+FBo48UGDjmztWPp4Mb63msW/Og5DR6+CHOPsjF0WDrtKFgi+PWD48sOQL1xPQw==
+"@commitlint/config-angular@^12.0.1":
+  version "12.0.1"
+  resolved "https://registry.yarnpkg.com/@commitlint/config-angular/-/config-angular-12.0.1.tgz#080d96db84752f17ffed06bd81c46bb4bf7e3188"
+  integrity sha512-LuhglC8lh+5zdl+hjNunhH1b4Uj70w/TbdWna6CTvpuR59WSZSFZhIxutN2Fjuf1jlHGkx2bC9ZiOQW01YQNTA==
   dependencies:
-    "@commitlint/config-angular-type-enum" "^12.0.0"
+    "@commitlint/config-angular-type-enum" "^12.0.1"
 
 "@commitlint/ensure@^12.0.0":
   version "12.0.0"
@@ -3489,10 +3489,10 @@ humanize-ms@^1.2.1:
   dependencies:
     ms "^2.0.0"
 
-husky@^5.1.1:
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/husky/-/husky-5.1.1.tgz#8678953fd8deb86f387cbf1ad50bb2f7f96e83f2"
-  integrity sha512-80LZ736V0Nr4/st0c2COYaMbEQhHNmAbLMN8J/kLk7/mo0QdUkUGNDjv/7jVkhug377Wh8wfbWyaVXEJ/h2B/Q==
+husky@^5.1.2:
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/husky/-/husky-5.1.2.tgz#dc6a1f68640455d8d98c28875e073087f86c5081"
+  integrity sha512-lilaRYeDXcAOj8DuRnN9IxUyEMVbYg9rK7yVNkPB5V4hCvxIUxpMeiv9K2h77CE0HzjCnk1Br0oWe1IghXngDQ==
 
 iconv-lite@0.4.24:
   version "0.4.24"
@@ -6458,10 +6458,10 @@ run-queue@^1.0.0, run-queue@^1.0.3:
   dependencies:
     aproba "^1.1.1"
 
-rxjs@^6.6.3, rxjs@~6.6.3:
-  version "6.6.3"
-  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.6.3.tgz#8ca84635c4daa900c0d3967a6ee7ac60271ee552"
-  integrity sha512-trsQc+xYYXZ3urjOiJOuCOa5N3jAZ3eiSpQB5hIT8zGlL2QfnHLJ2r7GMkBGuIausdJN1OneaI6gQlsqNHHmZQ==
+rxjs@^6.6.3, rxjs@~6.6.6:
+  version "6.6.6"
+  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.6.6.tgz#14d8417aa5a07c5e633995b525e1e3c0dec03b70"
+  integrity sha512-/oTwee4N4iWzAMAL9xdGKjkEHmIwupR3oXbQjCKywF1BeFohswF3vZdogbmEF6pZkOsXTzWkrZszrWpQTByYVg==
   dependencies:
     tslib "^1.9.0"
 
@@ -7824,10 +7824,10 @@ webpack-sources@^2.1.1:
     source-list-map "^2.0.1"
     source-map "^0.6.1"
 
-webpack@^5.24.0:
-  version "5.24.0"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.24.0.tgz#dbb5017dae053a506d8b909b0b21367d05fd56ee"
-  integrity sha512-ZkDxabL/InAQy9jluQTA8VIB7Gkhsv5uMJdAIz4QP2u4zaOX6+Tig7Jv+WSwhHp9qTnAx0rmn0dVTUPqZGRLbg==
+webpack@^5.24.2:
+  version "5.24.2"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.24.2.tgz#33790dad631e8b639f4246d762e257720875fe54"
+  integrity sha512-uxxKYEY4kMNjP+D2Y+8aw5Vd7ar4pMuKCNemxV26ysr1nk0YDiQTylg9U3VZIdkmI0YHa0uC8ABxL+uGxGWWJg==
   dependencies:
     "@types/eslint-scope" "^3.7.0"
     "@types/estree" "^0.0.46"

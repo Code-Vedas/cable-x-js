@@ -27,7 +27,7 @@
   "homepage": "https://github.com/Code-Vedas/cable-x-js#readme",
   "devDependencies": {
     "@commitlint/cli": "^12.0.0",
-    "@commitlint/config-angular": "^12.0.0",
+    "@commitlint/config-angular": "^12.0.1",
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/exec": "^5.0.0",
     "@semantic-release/git": "^9.0.0",
@@ -38,13 +38,13 @@
     "awesome-typescript-loader": "^5.2.1",
     "copy-webpack-plugin": "^7.0.0",
     "coveralls": "^3.1.0",
-    "husky": "^5.1.1",
+    "husky": "^5.1.2",
     "karma-coverage-istanbul-instrumenter": "^1.0.3",
     "karma-coverage-istanbul-reporter": "^3.0.3",
     "karma-jasmine-html-reporter": "^1.5.4",
     "lint-staged": "^10.5.4",
     "rimraf": "^3.0.2",
-    "rxjs": "~6.6.3",
+    "rxjs": "~6.6.6",
     "semantic-release": "^17.3.9",
     "terser-webpack-plugin": "^5.1.1",
     "ts-loader": "^8.0.17",
@@ -52,7 +52,7 @@
     "tslint-config-airbnb": "^5.11.2",
     "typescript": "^4.1.5",
     "uuid": "^8.3.2",
-    "webpack": "^5.24.0",
+    "webpack": "^5.24.2",
     "webpack-cli": "^4.5.0"
   },
   "dependencies": {
